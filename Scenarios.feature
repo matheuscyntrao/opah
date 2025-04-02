@@ -15,7 +15,7 @@ Feature: Login
     Given o usuário esteja na url URL
     When o usuário preencher o campo nome com "<usuario>"
     And o usuário preencher o campo senha com "<senha>"
-    And o usuário interagir com o captcha "<isCaptcha>"g
+    And o usuário interagir com o captcha "<isCaptcha>"
     Then o sistema deverá informar a mensagem de erro "<mensagem>"
     Examples:
       | usuario          | senha          | isCaptcha | mensagem                                            |
