@@ -17,6 +17,3 @@ export class Validations {
       return true;
     }
   }
-
-
-  
