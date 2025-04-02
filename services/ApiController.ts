@@ -1,6 +1,6 @@
 
 import axios, { Method, AxiosRequestHeaders } from 'axios';
-import { ApiRequest } from '../validations/ApiRequest';
+import { ApiRequest } from './ApiRequest';
 
 export class ApiController {
 
