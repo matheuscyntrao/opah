@@ -1,4 +1,5 @@
 import axios, { Method, AxiosRequestHeaders } from 'axios';
+import { ApiRequest } from '../validations/ApiRequest';
 
 export class ApiController {
   private baseUrl: string;
@@ -7,17 +8,17 @@ export class ApiController {
     this.baseUrl = baseUrl;
   }
 
-  async sendRequest(endpoint: string, method: Method, headers?: AxiosRequestHeaders, payload?: any) {
+  async sendRequest(apiRequest: ApiRequest) {
     try {
       const response = await axios({
-        url: `${this.baseUrl}${endpoint}`,
-        method,
-        headers,
-        data: payload,
+        url: `${this.baseUrl}${apiRequest.endpoint}`,
+        method: apiRequest.method;
+        headers: apiRequest.headers,
+        data: apiRequest.payload,
       });
       return response.data;
     } catch (error: any) {
-      console.error(`Aconteceu um erro ao realizar a request: ${error.message}, ${this.baseUrl}, ${endpoint}, ${method}, ${payload}`);
+      console.log(apiRequest, error);
       throw error;
     }
   }
