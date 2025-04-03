@@ -1,5 +1,5 @@
 
-import { ApiResponse } from "./ApiResponse";
+import { ApiResponse } from "../services/ApiResponse";
 
 export class Validations {
     static validateResponse(received: ApiResponse, expected: ApiResponse): boolean {
