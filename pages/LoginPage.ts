@@ -1,5 +1,4 @@
-import { LoginLocators } from '../pages/locators/LoginLocators';
-import Driver from '../framework/Driver/Driver'
+
 import TextField from '../framework/Elements/TextField';
 import Button from '../framework/Elements/Button';
 
