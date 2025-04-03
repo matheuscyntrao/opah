@@ -6,7 +6,7 @@ exports.config = {
         platformName: 'Android',
         browserName: 'Chromedriver',
         'appium:deviceName': 'Medium Phone API 36',
-        'appium:automationName': 'UiAutomator2'
+        'appium:automationName': 'AndroidStudioCarrefour'
     }],
     services: ['appium'],
     framework: 'cucumber',
