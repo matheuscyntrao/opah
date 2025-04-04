@@ -1,5 +1,5 @@
 import { Given, When, Then } from '@cucumber/cucumber';
-import ExemploPage from '../pageObjects/exemplo.page.js';
+import ExemploPage from '../../pageObjects/exemplo.page';
 
 const exemploPage = new ExemploPage();
 

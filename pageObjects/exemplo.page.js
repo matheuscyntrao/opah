@@ -1,6 +1,6 @@
 class ExemploPage {
     open() {
-      return browser.url('https://exemplo.com'); // Substitua pela URL da sua página
+      return browser.url('https://www.google.com'); // Substitua pela URL da sua página
     }
   
     get campoNome() {
