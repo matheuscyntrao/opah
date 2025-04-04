@@ -21,4 +21,4 @@ class ExemploPage {
     }
   }
   
-  module.exports = new ExemploPage();
+export default ExemploPage;
