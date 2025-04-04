@@ -10,7 +10,7 @@ exports.config = {
     services: ['appium'],
     framework: 'cucumber',
     cucumberOpts: {
-      require: ['./features/step-definitions/*.js'], // Caminho para seus arquivos de steps
+      require: ['./features/step-definitions/*.ts'], // Caminho para seus arquivos de steps
       backtrace: false,
       requireModule: [],
       dryRun: false,
