@@ -26,6 +26,7 @@
     "include": [
       "./datapool/Dataprovider.ts",
       "./datapool/User.ts",
+      "./datapool/User.json",
       "main.ts" // Adicionado main.ts
     ]
   }

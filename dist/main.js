@@ -1,12 +1,8 @@
 // main.ts
 import User from "./datapool/User.js";
 import Dataprovider from "./datapool/Dataprovider.js";
-const userData = {
-    id: 1,
-    name: "John Doe",
-    usuario: "johndoe",
-    password: "password123",
-};
+import * as fs from 'fs'; // Importe o módulo 'fs'
+const userData = JSON.parse(fs.readFileSync('./datapool/User.json', 'utf8'));
 const dataProvider = new Dataprovider(userData);
 const user = dataProvider.convertToModel(User);
 console.log("User:", user);
