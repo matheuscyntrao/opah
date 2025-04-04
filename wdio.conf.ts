@@ -2,7 +2,6 @@ exports.config = {
     runner: 'local',
     specs: ['./features/**/*.feature'], // Caminho para seus arquivos .feature
     capabilities: [{
-        // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android',
         browserName: 'Chromedriver',
         'appium:deviceName': 'Medium Phone API 36',
@@ -24,10 +23,6 @@ exports.config = {
       ignoreUndefinedDefinitions: false,
     },
     reporters: ['spec'],
-    mochaOpts: {
-      ui: 'bdd',
-      timeout: 60000
-    },
     appium: {
       command: 'appium',
       args: {
