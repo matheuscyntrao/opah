@@ -7,6 +7,7 @@
     "start": "node main.js"
   },
   "devDependencies": {
+    "@types/node": "^22.14.0",
     "@wdio/appium-service": "^9.12.3",
     "@wdio/browserstack-service": "^9.12.3",
     "@wdio/cli": "^9.12.2",
