@@ -1,4 +1,4 @@
-import { $ } from '@wdio/globals'; // Importe o $ diretamente dos globals
+import { $ } from '@wdio/globals';
 
 class LoginPage {
 
