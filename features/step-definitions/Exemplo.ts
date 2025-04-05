@@ -1,9 +1,9 @@
 import { Given, When, Then } from '@cucumber/cucumber';
-import ExemploPage from '../../pageObjects/exemplo.page';
+import LoginPage from '../../pageObjects/LoginPage.ts';
 import { $ } from '@wdio/globals'; // Importe o $ diretamente dos globals
 
 
-const exemploPage: ExemploPage = new ExemploPage();
+const loginPage: LoginPage = new LoginPage();
 
 Given('acesso o menu {string}', async (opcao: string) => {
     const seletorMenu = '~'+opcao;
@@ -20,14 +20,11 @@ Given('acesso o menu {string}', async (opcao: string) => {
 
 
 Given('preencher os campos de login corretamente', async () => {
-  const campoEmail = await $("~input-email");
-  const campoSenha = await $("~input-password");
-  const buttonSubmit = await $('//*[contains(@text, "LOGIN")]');
-
-  if (await campoEmail.isExisting()) {
-    await campoEmail.setValue("usuario");
-    await campoSenha.setValue("senha");
-    await buttonSubmit.click();
+  
+  if (await loginPage.getCampoEmail.isExisting()) {
+    await loginPage.getCampoEmail.setValue("usuario");
+    await loginPage.getCampoPassword.setValue("senha");
+    await loginPage.getButtonLogin.click();
   }
 
 });
