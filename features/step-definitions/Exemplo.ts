@@ -1,10 +1,9 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import LoginPage from '../../pageObjects/LoginPage.ts';
-import { $ } from '@wdio/globals'; // Importe o $ diretamente dos globals
-
+import { $ } from '@wdio/globals';
 import User from "../../datapool/User.js";
 import Dataprovider from "../../datapool/Dataprovider.js";
-import * as fs from 'fs'; // Importe o módulo 'fs'
+import * as fs from 'fs';
 
 const loginPage: LoginPage = new LoginPage();
 
@@ -19,7 +18,7 @@ Given('acesso o menu {string}', async (opcao: string) => {
     } else {
         throw new Error(`Menu não encontrado com o seletor: ${seletorMenu}`);
     }
-    
+
 });
 
 
