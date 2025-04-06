@@ -53,10 +53,9 @@ When('preencher o formulário de Cadastro', async () => {
 });
 
 Then('o sistema deverá mostrar a mensagem {string}', async (mensagemEsperada: string) => {
-  $(document).ready(function() {
     //TODO: Entender como fazer o haldner do alert (tentei bastante rsrs).
     //TODO: Vou implementar o before after, que daí não passo por isso, mas seria interessante conseguir até validar a mensagem do alert nos cenários.
-    // Da forma como construí, o browser/driver parece não ter acesso global no appium.
-  });
+    // Da forma como construí, o browser parece não ter acesso global no appium
+    // Ainda abriria discussão com os devs para fazer isso em uma modal. Alert não é usado mais desde 2000 xD~
 });
 

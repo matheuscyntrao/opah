@@ -14,6 +14,7 @@ class LoginPage {
       return $('//*[contains(@text, "LOGIN")]');;
     }
 
+
 }
   
 export default LoginPage;
