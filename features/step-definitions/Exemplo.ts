@@ -5,15 +5,15 @@ import { $, driver } from '@wdio/globals';
 import User from "../../datapool/User.js";
 import Dataprovider from "../../datapool/Dataprovider.js";
 import * as fs from 'fs';
+import { expect } from 'chai'; // Using Chai assertion library (common in WebdriverIO)
 
 
 const loginPage: LoginPage = new LoginPage();
 const signupPage: SignupPage = new SignupPage();
 
-
 Given('acesso o menu {string}', async (opcao: string) => {
    
-  const seletorMenu = '~'+opcao;
+    const seletorMenu = '~'+opcao;
     const elementoMenu = await $(seletorMenu);
 
     if (await elementoMenu.isExisting()) {
@@ -27,8 +27,7 @@ Given('acesso o menu {string}', async (opcao: string) => {
 
 
 When('preencher os campos de login corretamente', async () => {
-  
-  if (await loginPage.getCampoEmail.isExisting()) {
+    if (await loginPage.getCampoEmail.isExisting()) {
     const userData = JSON.parse(fs.readFileSync('datapool/User.json', 'utf8'));
     const dataProvider = new Dataprovider(userData);
     const user: User = dataProvider.convertToModel<User>(User);
@@ -39,7 +38,7 @@ When('preencher os campos de login corretamente', async () => {
 
 });
 
-When('preencher o formulário de Cadastro', async () => {
+When('preencher o formulário de cadastro', async () => {
   
   if (await signupPage.getCampoEmail.isExisting()) {
     const userData = JSON.parse(fs.readFileSync('datapool/User.json', 'utf8'));
@@ -54,8 +53,29 @@ When('preencher o formulário de Cadastro', async () => {
 
 });
 
+When('preencher o formulário de cadastro com email incorreto', async () => {
+
+  if (await signupPage.getCampoEmail.isExisting()) {
+    const userData = JSON.parse(fs.readFileSync('datapool/User.json', 'utf8'));
+    const dataProvider = new Dataprovider(userData);
+    const user: User = dataProvider.convertToModel<User>(User);
+    await $('//*[@text="Sign up"]').click();
+    await signupPage.getCampoEmail.setValue("teste");
+    await signupPage.getCampoPassword.setValue("12345678");
+    await signupPage.getCampoConfirmPassword.setValue("12345678");
+    await signupPage.getSignupButton.click();
+  }
+
+});
+
 Then('o sistema deverá mostrar a mensagem {string}', async (mensagemEsperada: string) => {
   //await driver.saveScreenshot('./some/path/screenshot.png');
   //TODO: Preciso entender porque o browser/driver não fica acessível com a configuração atual.
 });
 
+
+Then('o sistema deverá mostrar a mensagem Please enter a valid email address', async () => {
+  const element = await $('~email-error-message');
+  const text = await element.text();
+  expect(text).to.equal('Please enter a valid email address');
+});

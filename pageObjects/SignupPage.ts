@@ -15,7 +15,7 @@ class SignupPage {
     }
 
     get getSignupButton() { 
-      return $('//*[contains(@text, "LOGIN")]');;
+      return $('//*[contains(@text, "SIGN UP")]');;
     }
 
 }

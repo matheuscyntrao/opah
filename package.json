@@ -17,6 +17,7 @@
     "@wdio/visual-service": "^6.4.0",
     "appium": "^2.17.1",
     "appium-uiautomator2-driver": "^4.1.5",
+    "chai": "^5.2.0",
     "typescript": "^5.8.2"
   }
 }
