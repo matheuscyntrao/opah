@@ -110,7 +110,7 @@ E por fim, rodamos tudo com:
 
     4. Integração CI/CD:
  ○ Configurar um pipeline de CI/CD (GitLab CI/CD) para automatizar a execução dos
- testes a cada commit ou merge request. [ FAIL - Vou entregar uma imagem docker do jenkins junto com os testes de api ]
+ testes a cada commit ou merge request. [ OK - Gerei um pela IA, fez sentido, substituí algumas variáveis. ]
 
 
 
