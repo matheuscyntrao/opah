@@ -1,31 +1,60 @@
 
 🔧 Configurando o ambiente:
+
 1️⃣ Instale o Visual Studio Code e o plugin Cucumber
+
 2️⃣ Instale o Java 1.8+ e configure a variável JAVA_HOME
+
 3️⃣ Baixe e configure o Platform-tools (ADB) (ANDROID_HOME)
 
+
+
 ⚙️ Instalando as dependências: (obviamente nodejs instalado e typescript se for usar)
+
 📌 npm install appium
+
 📌 npm install uiautomator2
+
 📌 npm install webdriverio
+
 📌 appium install uiautomator2
+
+
 
 Rode o comando npx tsc para compilar o typescript
 Rode o npm install para instalar as dependências
 
+
+
 Não se esqueça de instalar o android studio e criar um device! (faz login no chrome, etc pra não trancar, pensa que um emulador é tipo um telefone zerado).
+
+
 
 (O projeto tem 2 conf, um para rodar no android studio com o app emulado e outro para rodar no browser stack (só tá configurado, não cheguei a validar a execução por lá)).
 
+
+
 🛠️ Configuração do projeto (wdio.conf.ts):
+
 ✅ Definir capabilities do browser e device
+
 ✅ Configurar localização das features e step-definitions
+
 ✅ Escolher o runner (local, remoto, BrowserStack, Selenium Grid…)
+
 ✅ Integrar com relatórios (JUnit, Allure, ReportPortal…)
+
 ✅ Escolher o framework que você utilizará para o runner (Mocha, Junit, Cucumber, etc..)
+
+
+
 
 E por fim, rodamos tudo com:
  👉 npx wdio run ./wdio.conf.js
+
+
+
+
 
 
 
