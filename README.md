@@ -86,6 +86,7 @@ E por fim, rodamos tudo com:
 
     2. Execução em Ambientes Diferentes:
  ○ Configurar o projeto para executar os testes em emuladores de Android e iOS. [ Ok para o android ]
+ 
  ○ Integrar o projeto com o BrowserStack para executar os testes em dispositivos [ OK - porém não cheguei a validar o teste visualmente, só validei a execução via terminal, e deu passed]
  reais. (opcional)
 
