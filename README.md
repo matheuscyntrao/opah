@@ -131,6 +131,6 @@ E por fim, rodamos tudo com:
 
  ● CI/CD: GitLab CI/CD [ Entregarei a imagem jenkins, rodando os dois projetos após finalizar o teste de api ]
 
- ● Clouddedispositivos: BrowserStack [ Como mencionado, deixei pré configurado, mas não cheguei a acompanhar os testes por lá, me preocupei em fazer tudo funcionar certino ]
+ ● Cloud de dispositivos: BrowserStack [ Como mencionado, fiz uma poc na primeira versão com o chromedriver, browser mesmo. Depois de entregar os cenários reais do demo-app do webdriverio, não cheguei a validar a execução por lá]
 
  ● Controle de versão: Git [ OK ]
