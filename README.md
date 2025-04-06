@@ -104,7 +104,7 @@ E por fim, rodamos tudo com:
 
  ■ Logsdeexecução [ OK - Neste caso, utilizei o service log do proprio webdriverio instalado no proprio conf]
 
- ■ Informações sobre o ambiente de teste [ FAIL - Neste caso, também dependo de acesso às funções do browser, scenario, que ficam indisponível com typescrit/appiu/cucumber]
+ ■ Informações sobre o ambiente de teste [ FAIL - Neste caso, também dependo de acesso às funções do browser, scenario, que ficam indisponível com typescrit/appium/cucumber]
 
 
 
