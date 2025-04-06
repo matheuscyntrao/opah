@@ -50,7 +50,7 @@ Não se esqueça de instalar o android studio e criar um device! (faz login no c
 
 
 E por fim, rodamos tudo com:
- 👉 npx wdio run ./wdio.conf.js
+ 👉 npx wdio run ./android_cucumber_androidstudiodevice_specreporter_appium.conf
 
 
 
