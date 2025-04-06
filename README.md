@@ -96,7 +96,7 @@ E por fim, rodamos tudo com:
  ○ Configurar a captura automática de screenshots durante a execução dos testes,
  para facilitar a análise de falhas.
 
- ○ Gerarrelatórios detalhados de testes, utilizando Allure Report ou ExtentReport,
+ ○ Gerar relatórios detalhados de testes, utilizando Allure Report ou ExtentReport,
  com os seguintes elementos:
 
  ■ Resumodostestes executados [ OK - Utilizei o próprio Spec, onde acabamos conseguindo ver no terminal os testes executados. Tenho experiência em integrar ferramentas de report, porém ainda preciso realizar o segundo teste]
