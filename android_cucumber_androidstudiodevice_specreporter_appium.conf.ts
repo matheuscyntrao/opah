@@ -7,6 +7,7 @@ exports.config = {
         'appium:automationName': 'UiAutomator2',
         'appium:app': './wdionative.apk', // Caminho relativo correto para o APK
     }],
+    maxInstances: 1,
     services: ['appium'],
     framework: 'cucumber',
     cucumberOpts: {

@@ -1,18 +1,12 @@
 {
     "compilerOptions": {
-      "moduleResolution": "node",
-      "module": "ESNext",
-      "target": "es2022",
-      "lib": [
-        "es2022",
-        "dom"
-      ],
-      "types": [
-        "node",
-        "@wdio/globals/types",
-        "expect-webdriverio",
+      "types": 
+      [
+        "node", 
+        "@wdio/globals", 
         "@wdio/cucumber-framework"
-      ],
+      ]
+    ,
       "skipLibCheck": true,
       "noEmit": false, // Alterado para false para gerar arquivos .js
       "outDir": "./dist", // Adicionado para especificar o diretório de saída
