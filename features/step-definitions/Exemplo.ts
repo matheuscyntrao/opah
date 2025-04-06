@@ -1,8 +1,7 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import LoginPage from '../../pageObjects/LoginPage.ts';
 import SignupPage from '../../pageObjects/SignupPage.ts';
-import { $ } from '@wdio/globals';
-import driver from '@appium/base-driver'
+import { $, driver } from '@wdio/globals';
 import User from "../../datapool/User.js";
 import Dataprovider from "../../datapool/Dataprovider.js";
 import * as fs from 'fs';
@@ -56,6 +55,7 @@ When('preencher o formulário de Cadastro', async () => {
 });
 
 Then('o sistema deverá mostrar a mensagem {string}', async (mensagemEsperada: string) => {
-    //TODO: Preciso entender porque o browser/driver não fica acessível com a configuração atual.
+  //await driver.saveScreenshot('./some/path/screenshot.png');
+  //TODO: Preciso entender porque o browser/driver não fica acessível com a configuração atual.
 });
 
