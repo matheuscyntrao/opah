@@ -60,7 +60,7 @@ E por fim, rodamos tudo com:
 
  Sobre a entrega:
 
-1.Construção dos Scripts:
+    1.Construção dos Scripts:
  ○ Criar 10 cenários de teste que cubram as principais funcionalidades do aplicativo
  mobile. Os cenários devem incluir:
 
@@ -84,14 +84,14 @@ E por fim, rodamos tudo com:
 
 
 
- 2. Execução em Ambientes Diferentes:
+    2. Execução em Ambientes Diferentes:
  ○ Configurar o projeto para executar os testes em emuladores de Android e iOS. [ Ok para o android ]
  ○ Integrar o projeto com o BrowserStack para executar os testes em dispositivos [ OK - porém não cheguei a validar o teste visualmente, só validei a execução via terminal, e deu passed]
  reais. (opcional)
 
 
 
-3. Geração de Evidências:
+    3. Geração de Evidências:
  ○ Configurar a captura automática de screenshots durante a execução dos testes,
  para facilitar a análise de falhas.
 
@@ -108,7 +108,7 @@ E por fim, rodamos tudo com:
 
 
 
- 4. Integração CI/CD:
+    4. Integração CI/CD:
  ○ Configurar um pipeline de CI/CD (GitLab CI/CD) para automatizar a execução dos
  testes a cada commit ou merge request. [ FAIL - Vou entregar uma imagem docker do jenkins junto com os testes de api ]
 
@@ -132,5 +132,5 @@ E por fim, rodamos tudo com:
  ● CI/CD: GitLab CI/CD [ Entregarei a imagem jenkins, rodando os dois projetos após finalizar o teste de api ]
 
  ● Clouddedispositivos: BrowserStack [ Como mencionado, deixei pré configurado, mas não cheguei a acompanhar os testes por lá, me preocupei em fazer tudo funcionar certino ]
- 
+
  ● Controle de versão: Git [ OK ]
